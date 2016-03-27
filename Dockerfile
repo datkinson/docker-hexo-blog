@@ -1,6 +1,9 @@
 FROM node:latest
 MAINTAINER Daniel Atkinson <hourd.tasa@gmail.com>
 
+# Install Vim
+RUN apt-get update && apt-get install -y vim
+
 # prepare work directory
 WORKDIR /blog
 
